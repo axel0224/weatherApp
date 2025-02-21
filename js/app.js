@@ -68,7 +68,7 @@ function displayWeatherData(data, city) {
     const weatherCondition = weatherDescription[weatherCode] || "Unknown";
     listItems[2].innerHTML = `<p>Condition: ${weatherCondition}</p>`;
 }
-
+// test
 
 document.getElementById("btnSearch").addEventListener("click", async (event) => {
     event.preventDefault();
