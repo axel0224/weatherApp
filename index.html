@@ -9,48 +9,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="d-flex justify-content-center align-items-center">
-        <form action="" class="text-center">
-            <div class="row g-3 justify-content-center">
-                <div class="col-auto">
-                    <input id="txtSearchCity" class="form-control" type="text" placeholder="Enter a City" aria-label="Enter a city">
+    <div class="d-flex vstack gap-2 col-md-5 mx-auto">
+        <div class="d-flex justify-content-center align-items-center">
+            <form id="weather-form" class="text-center">
+                <div class="row g-3 justify-content-center">
+                    <div class="col-auto">
+                        <input id="txtSearchCity" class="form-control" type="text" placeholder="Enter a City" aria-label="Enter a city">
+                    </div>
+                    <div class="col-auto">   
+                        <button id="btnSearch" class="btn btn-outline-secondary" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>        
+                    </div> 
                 </div>
-                <div class="col-auto">   
-                    <button id="btnSearch" class="btn btn-outline-secondary">
-                        <i class="bi bi-search"></i>
-                    </button>        
-                </div> 
-            </div>
-        </form>
-    </div>
-    <div class="card mb-3 d-flex justify-content-center align-items-center">
-        <div class="justify-content-center align-items-center d-flex">
-            <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">City</h5>
-                    <p class="card-text">Temperature</p>
+            </form>
+        </div>
+        <div class="card mb-3 d-flex justify-content-center align-items-center">
+            <div class="align-items-center d-flex">
+                <div class="col-md-4">
+                    <img id="imgConditions" src="" class="img-fluid rounded-start" alt="Weather Condition">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 id="city-name" class="card-title">City</h5>
+                        <p id="temp" class="card-text">Temperature: -- °C</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="justify-content-center align-items-center d-flex">
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">
+                    <p id="clouds">Clouds: --%</p>  
+                </li>
+                <li class="list-group-item">
+                    <p id="humidity">Humidity: --%</p>
+                </li>
+                <li class="list-group-item">
+                    <p id="windspeed">Wind Speed: -- m/s</p>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="justify-content-center align-items-center d-flex">
-        <ul class="list-group list-group-horizontal">
-            <li class="list-group-item">
-                <span>clouds</span>
-                
-            </li>
-            <li class="list-group-item">
-                <p>humidity</p>
-            </li>
-            <li class="list-group-item">
-                <p>windspeed</p>
-            </li>
-
-        </ul>
-    </div>
-</body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
